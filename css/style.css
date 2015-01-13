@@ -2,18 +2,24 @@ body{
   /*typography*/
   color: #222222;
   font-size: 1em;
-  font-family: "open sans","Helvelica Neue", san-serif;
-  background-color: #D5FFA3;
+  font-family: "Ubuntu Condensed","Helvelica Neue", san-serif;
+  background-color: #FFECB6;
+  margin: 0;
 }
 
-@media only screen and (max-width: 100px){
-  masthead {
+@media only screen and (max-width: 500px){
+  .masthead {
     padding: 3em 0;
   }
-  masthead-heading {
+  .masthead-heading {
     font-size: 3em;
   }
-  
+  .content-footer {
+    font-size: 1.5em;
+  }
+  .social {
+    font-size: 1em;
+  }
 }
 
 .content-footer,
@@ -26,8 +32,10 @@ body{
   padding: 6em 0;
   background-image: url('http://www.photoblink.com/images/c22/im/pb171072.jpg');
   background-size: cover;
-  border-top: #FFA516;
-  
+  border-top: thick solid #FFA516;
+  border-top-width: 1.5em; 
+  border-bottom: thick solid #FFA516;
+  border-bottom-width: 1.5em; 
 }
 
 
@@ -36,7 +44,7 @@ body{
   margin-bottom: 0.1em;
   font-family: "Gentium book basic", Georgia, serif;
   font-size: 2em;
-  color: #250FFF;
+  color: #3405FF;
   font-weight: bold;
   text-shadow: 3px 2px 1px black;
 }
@@ -44,7 +52,7 @@ body{
 
 .masthead-heading {
   margin-bottom: -0.2em;
-  font-family:"open sans", "Helvelica Neue", sans-serif;
+  font-family:"Ubuntu Condensed", "Helvelica Neue", sans-serif;
   font-weight: bold;
   font-size: 6em;
   letter-spacing: -0.02em;
@@ -59,7 +67,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
-  background-color:#FFA516;
+  background-color:#FF9C00;
    moz-box-shadow:    inset 0 0 100px #000000;
    webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow: inset 0 0 10px #000000;
@@ -68,13 +76,14 @@ body{
 
 .intro-section,
 .location-section,
-.question-section {
+.question-section, 
+.projects {
   padding: 1em 2em;
   max-width: 38em;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
-  background-color:#E80030;
+  background-color:#FFD250;
    moz-box-shadow:    inset 0 0 100px #000000;
    webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow: inset 0 0 10px #000000;
@@ -82,6 +91,10 @@ body{
 
 .social >li{
   display: inline-block;
+}
+
+.social {
+  padding:0;
 }
 
 .intro-section >p,
@@ -92,7 +105,43 @@ body{
 }
 
 .question-section >h2{
-  font-family:"gentium book basic", georgia, sans-serif;
+  font-family:"Ubuntu Condensed", georgia, sans-serif;
   font-size: 1.2em;
   font-weight:bold;
+}
+
+.clone {
+  width: 15.5em;
+  display: inline-block;
+  margin: 1.6em;
+
+}
+
+
+.times {
+    background-image: url('../images/hackthetimes.png');
+    height: 9.3em;
+    width: 15.5em;
+    background-size: cover;
+  }
+
+.karma {
+    background-image: url('../images/KarmaClone.png');
+    height: 9.3em;
+    width: 15.5em;
+    background-size: cover;
+}
+
+.fighter {
+    background-image: url('../images/streetFighter.png');
+    height: 9.3em;
+    width: 15.5em;
+    background-size: cover;
+}
+
+.sun {
+    background-image: url('../images/morphing.gif');
+    height: 9.3em;
+    width: 15.5em;
+    background-size: cover;
 }
